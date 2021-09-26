@@ -84,13 +84,13 @@ function myImageBig(data) {
 function onFetchSuccess() {
   success({
     title: 'Succsess!',
-    delay: 4000,
+    delay: 1000,
   });
 }
 
 function onFetchError() {
   error({
     title: 'Error!',
-    delay: 4000,
+    delay: 1000,
   });
 }
