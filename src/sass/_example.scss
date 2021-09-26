@@ -1,16 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-    Cantarell, sans-serif;
-  line-height: 1.5;
-  color: #2a2a2a;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -19,9 +6,61 @@ img {
 
 .search-form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
   justify-content: center;
-  padding: 8px;
-  margin-bottom: 24px;
+  height: 100%;
+}
+
+.photo-item {
+  display: flex;
+  list-style-type: none;
+  // flex-basis: calc((100% - 3 * 20px) / 3);
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+// .photo-card {
+//   display: flex;
+//   flex-direction: column;
+//   flex-grow: 2;
+// }
+
+.stats {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.stats-item {
+  display: flex;
+}
+
+.my-element-selector {
+  margin-bottom: 40px;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 161px;
+
+  font-size: 30px;
+  line-height: 1.3;
+  border-radius: 22px;
+
+  border: 1px solid grey;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  background-color: rgb(148, 208, 243, 0.5);
 }
 
 .button {
@@ -36,35 +75,4 @@ img {
 
 .button > .spinner.is-hidden {
   display: none;
-}
-
-/* Article List */
-.articles {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 20px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  max-width: calc(100vw - 80px);
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-}
-
-.articles li {
-  height: 450px;
-  overflow: hidden;
-}
-
-.articles img {
-  display: block;
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.articles a {
-  text-decoration: none;
-  color: #2a2a2a;
 }

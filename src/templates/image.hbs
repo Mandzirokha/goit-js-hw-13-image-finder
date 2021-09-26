@@ -1,11 +1,11 @@
 {{#each this}}
-  <li>
+  <li class='photo-item'>
     <div class='photo-card'>
       <img
         src='{{webformatURL}}'
         alt='{{tags}}'
         class='gallery-img'
-        data-source='{{largeImageURL}}'
+        data-large='{{largeImageURL}}'
       />
 
       <div class='stats'>
@@ -23,7 +23,7 @@
         </p>
         <p class='stats-item'>
           <i class='material-icons'>cloud_download</i>
-          {{dowloads}}
+          {{downloads}}
         </p>
       </div>
     </div>
